@@ -37,6 +37,7 @@ spec:
                   name: new-relic-license-key
                   key: new-relic-license-key
                   optional: true
+              
           image: "{{ include "anythink-tenant.backendRepository" .}}:{{ .Values.backend.image.tag }}"
           imagePullPolicy: {{ .Values.backend.image.pullPolicy }}
           name: {{ .Values.backend.serviceName }}
