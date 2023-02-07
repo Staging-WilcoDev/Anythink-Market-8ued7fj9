@@ -57,3 +57,5 @@ services:
       - ./:/usr/src/
     depends_on:
       - "anythink-frontend-react" 
+      
+      
